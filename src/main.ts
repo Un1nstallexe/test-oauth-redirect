@@ -5,7 +5,7 @@ window.onload = function() {
   console.log(code);
   // Redirect to the app with token via deep link
   if (code) {
-    const redirectUrl = `sportlocator://?${params.toString()}`;
+    const redirectUrl = `sportlocator://login?${params.toString()}`;
     window.location.replace(redirectUrl);
   } else {
     document.body.innerHTML = "Failed to authenticate with VK.";
